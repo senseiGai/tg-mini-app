@@ -1,4 +1,6 @@
 import { Snowflake } from "lucide-react"
+import { Star } from "lucide-react"
+
 import { getBackgroundStyle, getTextColorClass, getNumberClasses } from "../../utils/getTopListColors"
 
 interface ITopListItemProps {
@@ -8,6 +10,7 @@ interface ITopListItemProps {
     firstPlace?: boolean
     secondPlace?: boolean
     thirdPlace?: boolean
+    isStarIcon?: boolean
 }
 
 
@@ -19,12 +22,13 @@ export const TopListItem = ({
     firstPlace,
     secondPlace,
     thirdPlace,
+    isStarIcon,
 }: ITopListItemProps) => {
     const textColorClass = getTextColorClass(firstPlace, secondPlace, thirdPlace)
 
     return (
         <div
-            className="w-full h-[70px] rounded-[5px] px-4 flex flex-row justify-between items-center"
+            className={`${isStarIcon ? "h-[55px]" : "h-[70px]"} w-full  rounded-[5px] px-4 flex flex-row justify-between items-center`}
             style={getBackgroundStyle(firstPlace, secondPlace, thirdPlace)}
         >
             <div className="flex flex-row gap-x-3 items-center">
@@ -33,9 +37,13 @@ export const TopListItem = ({
                 </div>
                 <span className={`text-[18px] ${textColorClass}`}>{username}</span>
             </div>
-            <div className="flex items-center gap-x-1">
-                <span className={`text-[20px] ${textColorClass}`}>{amount}k</span>
-                <Snowflake size={24} className={textColorClass} />
+            <div className="flex items-center gap-x-2">
+                <span className={`${isStarIcon ? "text-[18px]" : "text-[20px]"} ${textColorClass}`}>{amount}k</span>
+                {isStarIcon ? (
+                    <Star size={24} className={textColorClass} />
+                ) : (
+                    <Snowflake size={24} className={textColorClass} />
+                )}
             </div>
         </div>
     )
