@@ -1,5 +1,5 @@
 import { ListItem } from "../../../../shared/ui/list-item/list-item";
-import { miningModes } from "../../model/mock-data";
+import { miningModes } from "../../lib/mock-data";
 import { usePopupStore } from "../../../../shared/model/popup-store/popup-store";
 
 import { Pickaxe } from "lucide-react";

@@ -8,7 +8,7 @@ import {
     CartesianGrid
 } from 'recharts';
 
-import { mockData } from '../model/mock-data';
+import { mockData } from '../lib/mock-data';
 
 export const Chart = () => {
 

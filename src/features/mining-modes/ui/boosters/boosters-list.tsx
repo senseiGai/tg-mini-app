@@ -1,5 +1,5 @@
 import { ListItem } from "../../../../shared/ui/list-item/list-item";
-import { boosters } from "../../model/mock-data";
+import { boosters } from "../../lib/mock-data";
 import { usePopupStore } from "../../../../shared/model/popup-store/popup-store";
 
 import { Timer } from "lucide-react";

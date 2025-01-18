@@ -1,4 +1,4 @@
-import { ProfileData } from './mock-data';
+import { ProfileData } from '../lib/mock-data';
 import { Snowflake, LucideIcon } from 'lucide-react';
 
 export const categories: Array<{

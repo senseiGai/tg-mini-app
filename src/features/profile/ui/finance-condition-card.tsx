@@ -1,5 +1,5 @@
 import { categories } from "../model/categories";
-import { ProfileData } from "../model/mock-data";
+import { ProfileData } from "../lib/mock-data";
 
 
 
