@@ -1,7 +1,7 @@
 import { NavLink } from "react-router"
-import { useNavigationStore } from "../model/navigation-store"
-import { useSidebarStore } from "../model/sidebar-store"
-import { ILink } from '../model/links'
+import { useNavigationStore } from "../../model/navigation-store"
+import { useSidebarStore } from "../../model/sidebar-store"
+import { ILink } from '../../model/links'
 
 export const SidebarLink = ({ path, icon: Icon, name }: ILink) => {
     const { active, setActive } = useNavigationStore()

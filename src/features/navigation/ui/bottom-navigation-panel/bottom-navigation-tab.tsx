@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router'
 
-import { ILink } from '../model/links'
+import { ILink } from '../../model/links'
 
-import { useNavigationStore } from '../model/navigation-store'
+import { useNavigationStore } from '../../model/navigation-store'
 
 
 export const NavigationTab = ({ name, icon: Icon, path }: ILink) => {

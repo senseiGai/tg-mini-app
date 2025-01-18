@@ -1,4 +1,4 @@
-import { Header } from "../../features/navigation/ui/header"
+import { Header } from "../../features/navigation/ui/header/header"
 import { FinanceConditionCard } from "../../features/profile/ui/finance-condition-card"
 import { Chart } from "../../features/chart/ui/chart"
 import { Button } from "../../shared/ui/button/button"
@@ -11,7 +11,7 @@ import { UserRoundPlus } from "lucide-react"
 export const MainScreen = () => {
     return (
         <main className="flex flex-col">
-            <Header title="Snejok Mining" isBurger />
+            <Header title="Snejok Mining" />
             <FinanceConditionCard {...mockData} />
             <Chart />
             <Button label='Start mining' className="mt-6" />

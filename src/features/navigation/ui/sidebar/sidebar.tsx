@@ -1,9 +1,9 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { SidebarLink } from './sidebar-link';
-import { useSidebarStore } from '../model/sidebar-store';
+import { useSidebarStore } from '../../model/sidebar-store';
 
 import { X } from 'lucide-react';
-import { sidebarLinks } from '../model/links';
+import { sidebarLinks } from '../../model/links';
 
 
 export const Sidebar = () => {
