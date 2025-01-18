@@ -1,15 +1,11 @@
 import { NavLink } from 'react-router'
-import { LucideIcon } from 'lucide-react'
+
+import { ILink } from '../model/links'
 
 import { useNavigationStore } from '../model/navigation-store'
 
-interface NavigationTabProps {
-    name: string
-    icon: LucideIcon
-    path: string
-}
 
-export const NavigationTab = ({ name, icon: Icon, path }: NavigationTabProps) => {
+export const NavigationTab = ({ name, icon: Icon, path }: ILink) => {
 
     const { active, setActive } = useNavigationStore()
 
